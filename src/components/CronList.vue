@@ -42,17 +42,17 @@
 import { getList } from '@/api/cron'
 
 export default {
-  data() {
+  data () {
     return {
       list: null,
       listLoading: true
     }
   },
-  created() {
+  created () {
     this.fetchData()
   },
   methods: {
-    fetchData() {
+    fetchData () {
       this.listLoading = true
       getList().then(response => {
         this.list = response.data.list
