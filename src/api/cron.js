@@ -2,7 +2,7 @@ import request from '@/utils/request'
 
 function getList (params) {
   return request({
-    url: '/crons',
+    url: '/api/getList.php',
     method: 'get',
     params
   })
